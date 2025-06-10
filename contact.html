@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ecovice Planting Services — Contact Us</title>
+<style>
+  /* Google Font Poppins */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+  :root {
+    --color-bg: #ffffff;
+    --color-heading: #111827;
+    --color-text: #6b7280;
+    --color-primary: #22c55e;
+    --color-primary-hover: #16a34a;
+    --card-bg: #f9fafb;
+    --card-shadow: rgba(0, 0, 0, 0.05);
+    --border-radius: 0.75rem;
+    --transition-time: 0.3s;
+    --max-width: 1200px;
+  }
+
+  /* Reset & base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.7;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-time) ease;
+  }
+  a:hover,
+  a:focus {
+    color: var(--color-primary-hover);
+    outline: none;
+  }
+  h1, h2, h3 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--color-heading);
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p, ul {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  ul {
+    padding-left: 1.5rem;
+  }
+  li {
+    margin-bottom: 0.75rem;
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    background: var(--card-bg);
+    box-shadow: 0 1px 8px var(--card-shadow);
+    z-index: 100;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    user-select: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    transition: background-color var(--transition-time);
+  }
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+  }
+
+  .hero {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+    margin: 2rem 1rem;
+  }
+  .hero h1 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .hero p {
+    font-size: 20px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-text);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  section {
+    padding: 6rem 1rem 6rem;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  article {
+    background: var(--card-bg);
+    padding: 3rem 3.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 25px var(--card-shadow);
+  }
+
+  article h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    background: #22c55e;
+    color: var(--color-text);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  footer address {
+    font-style: normal;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  footer .phone {
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  /* Contact Form */
+  form {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  input, textarea, select {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+    color: var(--color-heading);
+  }
+  textarea {
+    min-height: 150px;
+  }
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px #bbf7d0;
+  }
+  button[type="submit"] {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    align-self: start;
+    transition: background-color var(--transition-time);
+  }
+  button[type="submit"]:hover,
+  button[type="submit"]:focus {
+    background-color: var(--color-primary-hover);
+    outline: none;
+  }
+
+  /* Section layouts */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  @media (max-width: 768px) {
+    .two-col {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Lists */
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  /* Extra spacing */
+  .section-separator {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-top: 1px solid #e5e7eb;
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav class="container" aria-label="Primary navigation">
+    <div class="logo" tabindex="0">Ecovice Planting</div>
+    <div class="nav-links">
+      <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0"aria-current="page">Contact us</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" role="banner" aria-label="Contact Our Team">
+    <h1>Get in Touch with Ecovice Planting</h1>
+    <p>We’re here to help you build a greener future. Contact us with your questions, project inquiries, or feedback and our dedicated team will respond promptly.</p>
+  </section>
+
+  <article>
+    <h2>Contact Information</h2>
+    <p>Reach out to Ecovice Planting using any of the following methods:</p>
+    <ul>
+      <li><strong>Phone:</strong> +1 (800) 225-8876 - Our customer service team is available Monday through Friday, 9 am to 6 pm EST.</li>
+      <li><strong>Email:</strong> <a href="mailto:info@ecoviceplanting.com">info@ecoviceplanting.com</a> - We aim to reply within one business day.</li>
+      <li><strong>Office Address:</strong> 55 East 10th Street, New York, NY 10003, United States</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Contact Form</h2>
+    <form action="#" method="POST" aria-label="Contact form">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+1 (800) 225-8876" />
+
+      <label for="subject">Subject *</label>
+      <select id="subject" name="subject" required>
+        <option value="" disabled selected>Select a subject</option>
+        <option value="quote">Request a Quote</option>
+        <option value="service-info">Service Information</option>
+        <option value="support">Customer Support</option>
+        <option value="feedback">Feedback & Suggestions</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit" aria-label="Submit contact form">Send Message</button>
+    </form>
+  </article>
+
+  <article>
+    <h2>Customer Support Policies</h2>
+    <p>Our commitment to customer satisfaction includes:</p>
+    <ul>
+      <li>Timely responses: We reply to inquiries within 24 business hours.</li>
+      <li>Knowledgeable staff: Our team is trained in all aspects of ecological planting services.</li>
+      <li>Follow-up: We ensure all questions are fully answered and concerns addressed.</li>
+      <li>Accessibility: Support is available via phone, email, and social media.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Scheduling an Appointment</h2>
+    <p>Planning a consultation or site visit is easy:</p>
+    <ul>
+      <li>Use our contact form or call us to request an appointment.</li>
+      <li>Provide your preferred dates and times.</li>
+      <li>We confirm availability and send reminders before your appointment.</li>
+      <li>Our experts will visit your site to assess needs and provide recommendations.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Project Inquiry and Custom Solutions</h2>
+    <p>For detailed projects, we offer personalized solutions tailored to your space, goals, and budget.</p>
+    <p>Your inquiry will be reviewed by our project managers who may contact you for further information or to schedule an on-site assessment.</p>
+    <p>We showcase completed projects and share client testimonials to help you explore what we can achieve together.</p>
+  </article>
+
+  <article>
+    <h2>Partnership Opportunities</h2>
+    <p>If you are a business, nonprofit, or community group interested in partnering with Ecovice Planting, please contact us.</p>
+    <p>We collaborate on large-scale greening projects, educational initiatives, and community tree-planting events to create sustainable green spaces.</p>
+  </article>
+
+  <article>
+    <h2>Careers & Volunteering</h2>
+    <p>Join the team! We periodically offer career opportunities for passionate individuals committed to environmental stewardship.</p>
+    <p>Volunteers are also welcome to contribute during community events and educational programs.</p>
+    <p>Reach out to discuss joining or supporting our mission.</p>
+  </article>
+
+  <article>
+    <h2>Feedback and Complaints</h2>
+    <p>Your feedback helps us improve. Please share your experience or voice any concerns.</p>
+    <p>We take all reports seriously and work diligently to resolve any issues promptly.</p>
+  </article>
+
+  <article>
+    <h2>Frequently Asked Questions</h2>
+    <h3>How soon will I receive a reply to my inquiry?</h3>
+    <p>We strive to respond within 24 business hours.</p>
+    <h3>Can I request a custom planting plan?</h3>
+    <p>Yes, our team specializes in custom ecological planting solutions.</p>
+    <h3>Are consultations free?</h3>
+    <p>Initial consultations often are free; please inquire at contact.</p>
+  </article>
+
+  <article>
+    <h2>Accessibility and Accommodations</h2>
+    <p>We are committed to making our services accessible. Please inform us of any accommodations you may require when contacting us.</p>
+  </article>
+
+  <article>
+    <h2>Data Privacy & Security</h2>
+    <p>Your privacy is important to us. We handle all your data in accordance with our <a href="privacy.html">Privacy Policy</a> and ensure secure handling of communications.</p>
+  </article>
+
+  <article>
+    <h2>Additional Communication Channels</h2>
+    <p>Besides phone and email, connect with us on social media platforms for updates, tips, and community news:</p>
+    <ul>
+      <li><a href="https://facebook.com/ecoviceplanting" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://twitter.com/ecoviceplanting" target="_blank" rel="noopener">Twitter</a></li>
+      <li><a href="https://instagram.com/ecoviceplanting" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://linkedin.com/company/ecoviceplanting" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Community Outreach and Education</h2>
+    <p>We regularly organize workshops, seminars, and tree planting events. Contact us for schedules and participation information.</p>
+  </article>
+
+  <article>
+    <h2>Emergency Contacts</h2>
+    <p>For urgent support related to ongoing projects or services, please call our emergency hotline: +1 (212) 555-0000, available 24/7.</p>
+  </article>
+
+  <article>
+    <h2>Contact Form Security & Data Use</h2>
+    <p>Our contact forms use secure transmission protocols to safeguard your information. Data collected will only be used to respond to your queries and improve service quality.</p>
+  </article>
+</main>
+
+<footer>
+  <address aria-label="Company address">
+    55 East 10th Street, New York, NY 10003, United States
+  </address>
+  <div class="phone" aria-label="Contact phone number">Phone: +1 (800) 225-8876</div>
+</footer>
+</body>
+</html>

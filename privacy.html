@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ecovice Planting Services — Privacy Policy</title>
+<style>
+  /* Import Google Font Poppins */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+  :root {
+    --color-bg: #ffffff;
+    --color-heading: #111827; /* Almost black */
+    --color-text: #6b7280; /* Neutral gray */
+    --color-primary: #22c55e; /* Emerald green */
+    --color-primary-hover: #16a34a; /* Darker green */
+    --card-bg: #f9fafb;
+    --card-shadow: rgba(0, 0, 0, 0.05);
+    --border-radius: 0.75rem;
+    --transition-time: 0.3s;
+    --max-width: 1200px;
+  }
+
+  /* Reset and base styles */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.7;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-time) ease;
+  }
+  a:hover,
+  a:focus {
+    color: var(--color-primary-hover);
+    outline: none;
+  }
+
+  h1, h2, h3 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--color-heading);
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 3.75rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.875rem;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  ul {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  li {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Container */
+  .container {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Header */
+  header {
+    position: sticky;
+    top: 0;
+    background: var(--card-bg);
+    box-shadow: 0 1px 8px var(--card-shadow);
+    z-index: 100;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    user-select: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    transition: background-color var(--transition-time);
+  }
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+    margin: 2rem 1rem;
+  }
+  .hero h1 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-weight: 800;
+  }
+  .hero p {
+    font-size: 1.25rem;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-text);
+    font-weight: 600;
+  }
+
+  /* Content Sections */
+  section {
+    padding: 4rem 1rem 6rem;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Article blocks with subtle card background */
+  article {
+    background: var(--card-bg);
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 15px var(--card-shadow);
+  }
+
+  /* Subsection Headings */
+  article h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  /* Footer */
+  footer {
+    background:#22c55e;
+    color: var(--color-text);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  footer address {
+    font-style: normal;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  footer .phone {
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    .nav-links {
+      gap: 1rem;
+    }
+    article {
+      padding: 1.5rem 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav class="container" aria-label="Primary navigation">
+    <div class="logo" tabindex="0">Ecovice Planting</div>
+    <div class="nav-links">
+   <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0"aria-current="page">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" role="banner" aria-label="Privacy Policy Hero Section">
+    <h1>Privacy Policy</h1>
+    <p>At Ecovice Planting, your privacy is important to us. This policy explains how we collect, use, and protect your information while providing you exceptional service.</p>
+  </section>
+
+  <article>
+    <h2>Introduction</h2>
+    <p>Welcome to Ecovice Planting’s Privacy Policy. We respect your privacy and are dedicated to protecting your personal data throughout your interaction with our services.</p>
+    <p>This document outlines how we collect, use, and store information, ensuring transparency and empowering your control over your data.</p>
+  </article>
+
+  <article>
+    <h2>Information We Collect</h2>
+    <h3>Personal Identification Information</h3>
+    <p>When you interact with Ecovice Planting, we may collect personal information including your name, email address, postal address, phone number, and payment details. This information may be collected when you:</p>
+    <ul>
+      <li>Use our contact forms</li>
+      <li>Request quotes, consultations, or services</li>
+      <li>Subscribe to newsletters or updates</li>
+      <li>Participate in events or surveys</li>
+    </ul>
+    <h3>Non-Personal Identification Information</h3>
+    <p>We collect data that does not directly identify you, such as browser type, IP address, device information, geolocation data, and website activity logs. This information helps us improve user experience and maintain security.</p>
+  </article>
+
+  <article>
+    <h2>How We Use Your Information</h2>
+    <p>We use your data to:</p>
+    <ul>
+      <li>Deliver requested services and communications</li>
+      <li>Personalize your experience and improve our offerings</li>
+      <li>Manage accounts and process payments securely</li>
+      <li>Enhance website functionality and analyze usage trends</li>
+      <li>Comply with legal obligations and requests from authorities</li>
+      <li>Send promotional materials only when you opt-in</li>
+    </ul>
+    <p>At no time is your data sold to third parties for direct marketing.</p>
+  </article>
+
+  <article>
+    <h2>Legal Basis for Processing</h2>
+    <p>We process your personal data under the following legal bases:</p>
+    <ul>
+      <li><strong>Consent:</strong> When you agree to our terms and privacy policy.</li>
+      <li><strong>Contractual necessity:</strong> To perform services you request.</li>
+      <li><strong>Legitimate interests:</strong> For website security, fraud prevention, and business improvement.</li>
+      <li><strong>Legal compliance:</strong> To fulfill statutory and regulatory requirements.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Cookies and Tracking Technologies</h2>
+    <p>Ecovice Planting’s website uses cookies to enhance user experience. Cookies are small data files placed on your device. We use them for:</p>
+    <ul>
+      <li>Remembering user preferences</li>
+      <li>Session management</li>
+      <li>Analyzing site usage with third-party services like Google Analytics</li>
+    </ul>
+    <p>You may control cookies through your browser settings; however, disabling cookies may affect site functionality.</p>
+  </article>
+
+  <article>
+    <h2>Data Sharing and Disclosure</h2>
+    <p>We do not sell your personal information. We may share data with:</p>
+    <ul>
+      <li>Service providers assisting us (e.g., payment processors, email services) under confidentiality agreements</li>
+      <li>Legal authorities when required by law or to protect rights and safety</li>
+      <li>Affiliated entities under the Ecovice Planting umbrella for business functions</li>
+    </ul>
+    <p>In all cases, we take appropriate measures to safeguard your data.</p>
+  </article>
+
+  <article>
+    <h2>Data Security</h2>
+    <p>We maintain robust security measures including encryption, firewalls, and access controls to protect your data from unauthorized access, alteration, and disclosure.</p>
+    <p>All transactions involving sensitive information are processed through secure protocols.</p>
+  </article>
+
+  <article>
+    <h2>Your Data Rights</h2>
+    <p>Depending on your jurisdiction, you may have rights including:</p>
+    <ul>
+      <li>The right to access your personal data</li>
+      <li>The right to correct inaccurate data</li>
+      <li>The right to delete data ("right to be forgotten")</li>
+      <li>The right to restrict or object to processing</li>
+      <li>The right to data portability</li>
+      <li>The right to withdraw consent where applicable</li>
+    </ul>
+    <p>To exercise these rights, please contact us at <a href="mailto:privacy@ecoviceplanting.com">privacy@ecoviceplanting.com</a>.</p>
+  </article>
+
+  <article>
+    <h2>Children’s Privacy</h2>
+    <p>Our services are not directed at children under 16, and we do not knowingly collect data from children. If you believe we have collected such data, please contact us to request deletion.</p>
+  </article>
+
+  <article>
+    <h2>International Data Transfers</h2>
+    <p>Your data may be transferred to and processed in countries other than your own where our service providers operate. We ensure such transfers comply with applicable data protection laws and adequately protect your rights.</p>
+  </article>
+
+  <article>
+    <h2>Data Retention</h2>
+    <p>We retain your personal data only as long as necessary for the purposes outlined or as required by law. When data is no longer needed, we securely delete or anonymize it.</p>
+  </article>
+
+  <article>
+    <h2>Third-Party Links</h2>
+    <p>Our website may contain links to third-party sites. We are not responsible for the privacy practices of those sites. Please review their policies before sharing any personal information.</p>
+  </article>
+
+  <article>
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this policy periodically to reflect changes in our practices or legal requirements. We encourage you to review this page regularly. Significant changes will be communicated via email or prominent notices on our site.</p>
+  </article>
+
+  <article>
+    <h2>Contact Us</h2>
+    <p>If you have any questions or concerns regarding our privacy practices, please contact our Data Protection Officer:</p>
+    <p><strong>Email:</strong> <a href="mailto:privacy@ecoviceplanting.com">privacy@ecoviceplanting.com</a></p>
+    <p><strong>Address:</strong> 55 East 10th Street, New York, NY 10003, United States</p>
+    <p><strong>Phone:</strong> +1 (800) 225-8876</p>
+  </article>
+
+  <article>
+    <h2>Overview of Data Protection Laws</h2>
+    <p>We comply with various data protection laws, including the General Data Protection Regulation (GDPR) for users in the European Union and the California Consumer Privacy Act (CCPA) for California residents. These laws provide individuals with specific rights regarding their personal data and impose obligations on organizations that process such data.</p>
+  </article>
+
+  <article>
+    <h2>User Consent</h2>
+    <p>We obtain user consent for data processing activities where required by law. This includes obtaining explicit consent for marketing communications and ensuring that users are informed about how their data will be used.</p>
+  </article>
+
+  <article>
+    <h2>Data Breach Procedures</h2>
+    <p>In the event of a data breach, we have established procedures to promptly assess the situation, mitigate any potential harm, and notify affected individuals and relevant authorities as required by law.</p>
+  </article>
+
+  <article>
+    <h2>User Responsibilities</h2>
+    <p>Users are responsible for maintaining the confidentiality of their account information and for all activities that occur under their account. We encourage users to notify us immediately of any unauthorized use of their account.</p>
+  </article>
+
+  <article>
+    <h2>Opt-Out Options</h2>
+    <p>Users can opt out of receiving promotional communications from us by following the unsubscribe instructions included in each email or by contacting us directly. Please note that even if you opt out, we may still send you non-promotional emails related to your account or services.</p>
+  </article>
+
+  <article>
+    <h2>Data Processing Activities</h2>
+    <p>We engage in various data processing activities, including:</p>
+    <ul>
+      <li>Collecting user information for service delivery</li>
+      <li>Analyzing user behavior to improve our services</li>
+      <li>Storing user data securely in compliance with applicable laws</li>
+      <li>Sharing data with third-party service providers for operational purposes</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>User Feedback and Complaints</h2>
+    <p>We value user feedback and encourage users to share their thoughts or concerns regarding our privacy practices. Users can submit feedback or complaints via email or through our contact form on the website.</p>
+  </article>
+
+  <article>
+    <h2>Data Minimization Principle</h2>
+    <p>We adhere to the principle of data minimization, which means we only collect and process personal data that is necessary for the purposes outlined in this policy. We regularly review our data collection practices to ensure compliance.</p>
+  </article>
+
+</main>
+
+<footer>
+  <address aria-label="Company address">
+    55 East 10th Street, New York, NY 10003, United States
+  </address>
+  <div class="phone" aria-label="Contact phone number">Phone: +1 (800) 225-8876</div>
+</footer>
+</body>
+</html>

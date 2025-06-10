@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ecovice Planting Services — Cookie Policy</title>
+<style>
+  /* Import Google Font Poppins */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+  :root {
+    --color-bg: #ffffff;
+    --color-heading: #111827;
+    --color-text: #6b7280;
+    --color-primary: #22c55e;
+    --color-primary-hover: #16a34a;
+    --card-bg: #f9fafb;
+    --card-shadow: rgba(0, 0, 0, 0.05);
+    --border-radius: 0.75rem;
+    --transition-time: 0.3s;
+    --max-width: 1200px;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.7;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-time) ease;
+  }
+  a:hover,
+  a:focus {
+    color: var(--color-primary-hover);
+    outline: none;
+  }
+  h1, h2, h3 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--color-heading);
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p, ul {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  ul {
+    padding-left: 1.5rem;
+  }
+  li {
+    margin-bottom: 0.75rem;
+  }
+  .container {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    background: var(--card-bg);
+    box-shadow: 0 1px 8px var(--card-shadow);
+    z-index: 100;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    user-select: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    transition: background-color var(--transition-time);
+  }
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+  }
+  .hero {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+    margin: 2rem 1rem;
+  }
+  .hero h1 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .hero p {
+    font-size: 18px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-text);
+    font-weight: 600;
+  }
+  section {
+    padding: 6rem 1rem 6rem;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  article {
+    background: var(--card-bg);
+    padding: 2.5rem 3rem;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 15px var(--card-shadow);
+  }
+  article h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  footer {
+    background:#22c55e;
+    color: var(--color-text);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  footer address {
+    font-style: normal;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  footer .phone {
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+  .cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
+    background: var(--color-primary);
+    color: white;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 1100;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.15);
+    font-size: 14px;
+  }
+  .cookie-consent p {
+    flex: 1 1 300px;
+    margin: 0;
+  }
+  .cookie-consent button {
+    flex: 0 0 auto;
+    background: white;
+    color: var(--color-primary);
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-weight: 700;
+    min-width: 90px;
+    transition: background-color var(--transition-time);
+  }
+  .cookie-consent button:hover,
+  .cookie-consent button:focus {
+    background-color: #e1f3d8;
+    outline: none;
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    h1 { font-size: 36px; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 20px; }
+    article { padding: 2rem 1.5rem; }
+    .cookie-consent { font-size: 12px; padding: 0.75rem 1rem; }
+    .cookie-consent button { min-width: 70px; padding: 0.4rem 1rem; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav class="container" aria-label="Primary navigation">
+    <div class="logo" tabindex="0">Ecovice Planting</div>
+    <div class="nav-links">
+     <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0"aria-current="page">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero" role="banner" aria-label="Cookie Policy Overview">
+  <h1>Cookie Policy</h1>
+  <p>Your privacy is our priority. This policy describes how Ecovice Planting uses cookies and similar technologies to manage and enhance your experience.</p>
+</section>
+
+<article>
+  <h2>Understanding Cookies</h2>
+  <p>Cookies are small text files stored on your device when you visit websites. They enable websites to remember your preferences, authenticate logins, and collect analytics data, improving your interaction and website functionality.</p>
+  <p>We take a responsible approach to cookies, aiming to be transparent and respecting your privacy choices.</p>
+</article>
+
+<article>
+  <h2>Types of Cookies Used</h2>
+  <h3>Essential Cookies</h3>
+  <p>Necessary for core website functions like authentication and security. These cookies cannot be disabled by users without impacting the site.</p>
+
+  <h3>Performance Cookies</h3>
+  <p>Aggregate anonymous data used to analyze website traffic, identifying popular content and spotting usage patterns to enhance your experience.</p>
+
+  <h3>Functional Cookies</h3>
+  <p>Enable customized experiences based on your preferences including language and display settings.</p>
+
+  <h3>Targeting Cookies</h3>
+  <p>Used by us or third parties to deliver tailored advertisements and monitor marketing effectiveness.</p>
+</article>
+
+<article>
+  <h2>How Cookies Improve Your Experience</h2>
+  <ul>
+    <li>Session management ensuring you stay logged in.</li>
+    <li>Remembering customization to avoid reconfiguring preferences.</li>
+    <li>Enabling security features.</li>
+    <li>Personalizing content and recommendations.</li>
+    <li>Gathering analytics to improve the website.</li>
+  </ul>
+</article>
+
+<article>
+  <h2>Third-Party Cookies & Services</h2>
+  <p>We utilize third-party service providers such as Google Analytics to collect anonymized data.</p>
+  <p>Advertising partners may also use cookies to serve interest-based ads.</p>
+  <p>Third-party cookies are subject to their own privacy policies, accessible on their sites.</p>
+</article>
+
+<article>
+  <h2>Managing and Controlling Cookies</h2>
+  <p>You control your cookie preferences through browser settings or via the consent banner below at any time.</p>
+  <p>Disabling or deleting cookies may reduce website functionality or limit personalized features.</p>
+</article>
+
+<article>
+  <h2>Cookie Consent Banner</h2>
+  <p>Our consent banner requests your approval for non-essential cookies to comply with regulations and respect your privacy.</p>
+  <p>Your selection is stored for one year, but you can update choices anytime by clearing cookies or contacting us.</p>
+</article>
+
+<article>
+  <h2>Lifecycle & Expiry of Cookies</h2>
+  <p>Cookies have varying lifespans:</p>
+  <ul>
+    <li><strong>Session Cookies:</strong> Temporary and deleted when browser closes.</li>
+    <li><strong>Persistent Cookies:</strong> Remain for set periods—ranging from days to years, depending on purpose.</li>
+  </ul>
+  <p>Our cookies generally expire based on their function, such as security sessions or consent persistence.</p>
+</article>
+
+<article>
+  <h2>Browser-Specific Behavior</h2>
+  <p>Different browsers handle cookies uniquely, e.g., cookie blocking defaults, privacy modes, and third-party cookie restrictions.</p>
+  <p>This may affect how you experience our site and cookie functionality.</p>
+</article>
+
+<article>
+  <h2>Impact of Privacy Regulations</h2>
+  <p>We comply with GDPR, CCPA, and other privacy laws requiring cookie transparency and user consent.</p>
+  <p>Your rights under these laws include access, deletion, and consent withdrawal regarding cookies.</p>
+</article>
+
+<article>
+  <h2>Cookies & Search Engine Optimization (SEO)</h2>
+  <p>Cookies do not impact SEO rankings but help track visitors effectively for analytics to enhance site performance.</p>
+</article>
+
+<article>
+  <h2>Cookies and Mobile Browsing</h2>
+  <p>Our site sets cookies across devices; however, mobile browsers may impose additional restrictions affecting cookie behavior.</p>
+</article>
+
+<article>
+  <h2>Behavioral Advertising Ethics & Choices</h2>
+  <p>We strive to perform ethical behavioral targeting with opt-in consent only and respect your choices to decline.</p>
+</article>
+
+<article>
+  <h2>Cookie Policy Enforcement & Auditing</h2>
+  <p>We regularly audit our cookie practices to ensure compliance and user privacy protection.</p>
+</article>
+
+<article>
+  <h2>Cookie Management Tools</h2>
+  <p>You may use browser extensions and plugins to monitor and control cookies according to your preferences.</p>
+</article>
+
+<article>
+  <h2>Cookies & Other Tracking Technologies</h2>
+  <p>Cookies are one part of tracking technologies; others include local storage and device fingerprinting, which we do not use.</p>
+</article>
+
+<article>
+  <h2>Emerging Trends & Future Tech</h2>
+  <p>The industry is evolving beyond cookies to privacy-friendly tracking methods such as Federated Learning of Cohorts (FLoC) and server-side tracking.</p>
+</article>
+
+<article>
+  <h2>Our Commitment to Transparency & Compliance</h2>
+  <p>Ecovice Planting is committed to transparent data use, clear communication, and respecting your privacy choices regarding cookies.</p>
+</article>
+
+<article>
+  <h2>FAQs about Cookies</h2>
+  <h3>What are cookies?</h3>
+  <p>Small data files stored on your device to improve website functionality and user experience.</p>
+
+  <h3>Can I disable cookies?</h3>
+  <p>Yes, via your browser settings or the consent options provided here, although this may reduce site usability.</p>
+
+  <h3>Do you share cookie data?</h3>
+  <p>Only aggregated anonymous data is shared with service providers for analytics and advertising under strict privacy terms.</p>
+</article>
+
+<article>
+  <h2>Glossary of Terms</h2>
+  <ul>
+    <li><strong>Cookie:</strong> A small file stored on a user’s device to maintain state across sessions.</li>
+    <li><strong>First-party Cookie:</strong> Set by the website you are visiting.</li>
+    <li><strong>Third-party Cookie:</strong> Set by a domain other than the website being visited, often for advertising.</li>
+    <li><strong>Session Cookie:</strong> Exists temporarily during browser session.</li>
+    <li><strong>Persistent Cookie:</strong> Remains after browser closes, expiring at a defined time.</li>
+    <li><strong>Consent:</strong> User permission for data processing or cookie usage.</li>
+  </ul>
+</article>
+
+<article>
+  <h2>How to Change Your Cookie Preferences</h2>
+  <p>Beyond the consent banner, you can adjust cookie settings in browser preferences or clear cookies manually using browser tools.</p>
+  <p>For more guidance, consult your browser’s help resources or contact us for assistance.</p>
+</article>
+
+<article>
+  <h2>Opt-In vs Opt-Out Cookie Consent Models</h2>
+  <p><strong>Opt-In:</strong> Requires explicit user consent before setting cookies.</p>
+  <p><strong>Opt-Out:</strong> Sets cookies by default but allows users to refuse or delete them after.</p>
+  <p>We implement an opt-in approach to respect your privacy and comply with regulations.</p>
+</article>
+
+<article>
+  <h2>Contact Us</h2>
+  <p>For any questions or privacy concerns related to cookies, please reach out:</p>
+  <p><strong>Email:</strong> <a href="mailto:info@ecoviceplanting.com">info@ecoviceplanting.com</a></p>
+  <p><strong>Address:</strong> 55 East 10th Street, New York, NY 10003, United States</p>
+  <p><strong>Phone:</strong> +1 (800) 225-8876</p>
+</article>
+</main>
+
+<footer>
+  <address aria-label="Company address">
+    55 East 10th Street, New York, NY 10003, United States
+  </address>
+  <div class="phone" aria-label="Contact phone number">Phone: +1 (800) 225-8876</div>
+</footer>
+
+<div class="cookie-consent" id="cookieConsent" role="dialog" aria-live="polite" aria-label="Cookie consent dialog">
+  <p>We use cookies to enhance your experience on our site. Please accept or decline non-essential cookies.</p>
+  <button id="acceptCookies" type="button" aria-label="Accept cookies">Accept</button>
+  <button id="declineCookies" type="button" aria-label="Decline cookies">Decline</button>
+</div>
+
+<script>
+  function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+      const date = new Date();
+      date.setTime(date.getTime() + days*24*60*60*1000);
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + encodeURIComponent(value || "") + expires + "; path=/; SameSite=Lax";
+  }
+  function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for(let i=0;i < ca.length;i++) {
+      let c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return decodeURIComponent(c.substring(nameEQ.length,c.length));
+    }
+    return null;
+  }
+
+  const consentBanner = document.getElementById('cookieConsent');
+  const acceptBtn = document.getElementById('acceptCookies');
+  const declineBtn = document.getElementById('declineCookies');
+
+  function hideConsent() {
+    consentBanner.style.display = 'none';
+  }
+
+  function showConsent() {
+    consentBanner.style.display = 'flex';
+  }
+
+  function initializeConsent() {
+    const consent = getCookie('ecovice_cookie_consent');
+    if (consent === null) {
+      showConsent();
+    }
+  }
+
+  acceptBtn.addEventListener('click', () => {
+    setCookie('ecovice_cookie_consent', 'accepted', 365);
+    hideConsent();
+  });
+
+  declineBtn.addEventListener('click', () => {
+    setCookie('ecovice_cookie_consent', 'declined', 365);
+    hideConsent();
+  });
+
+  window.onload = () => {
+    initializeConsent();
+  };
+</script>
+</body>
+</html>
